@@ -12,13 +12,18 @@ public class TestaReferencia {
 		f1.setSalario(2000);
 		
 		EditorVideo e1 = new EditorVideo();
-		f1.setNome("Josefa");
-		f1.setSalario(2500);
+		e1.setNome("Josefa");
+		e1.setSalario(2500);
+		
+		Designer d1 = new Designer();
+		d1.setNome("Rita");
+		d1.setSalario(2500);
 		
 		ControleBonificacao controle = new ControleBonificacao();
 		controle.registra(g1);
 		controle.registra(f1);
 		controle.registra(e1);
+		controle.registra(d1);
 		
 		System.out.println(controle.getSoma());
 		
